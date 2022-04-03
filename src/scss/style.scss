@@ -1,0 +1,16 @@
+// Только импорты
+
+@import '~normalize.css';
+@import '../../node_modules/swiper/swiper-bundle.css';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
+
+@import './fonts.scss';
+@import './variables.scss';
+
+// header
+@import './blocks/header/header.scss';
+
+// main
+@import './blocks/main/main.scss';
+
+
