@@ -21,15 +21,17 @@
             <img src="./img/header/logo.svg" alt="Лого">
           </div>
           <div class="row__right-item">
-            <button class="button button--mobile-hidden">
-              <img src="./img/header/phone.svg" alt="Звонок">
-            </button>
-            <button class="button button--mobile-hidden">
-              <img src="./img/header/message.svg" alt="Сообщение">
-            </button>
-            <button class="button button--mobile-hidden">
-              <img src="./img/header/account.svg" alt="Аккаунт">
-            </button>
+            <div class="button--mobile-hidden">
+              <button class="button">
+                <img src="./img/header/phone.svg" alt="Звонок">
+              </button>
+              <button class="button">
+                <img src="./img/header/message.svg" alt="Сообщение">
+              </button>
+              <button class="button">
+                <img src="./img/header/account.svg" alt="Аккаунт">
+              </button>
+            </div>
             <button class="button">
               <img src="./img/header/statement.svg" alt="Оставить заявку">
             </button>
@@ -41,6 +43,72 @@
       </div>
     </div>
   </header>
+  <div class="modal-window">
+    <div class="overlay"></div>
+    <aside class="aside">
+      <div class="aside__wrapper">
+        <div class="aside-head">
+          <div class="aside-head__close">
+            <button class="button">
+              <img src="./img/header/modal-window/close.svg" alt="Закрыть">
+            </button>
+            <img src="./img/header/modal-window/logo.svg" alt="Логотип" class="logo">
+          </div>
+          <div class="aside-head__search">
+            <button class="button">
+              <img src="./img/header/modal-window/search.svg" alt="Поиск">
+            </button>
+          </div>
+        </div>
+        <div class="aside-body">
+          <div class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item navigation__item--active"><a href="#">Ремонт техники</a></li>
+              <li class="navigation__item"><a href="#">Услуги и сервисы</a></li>
+              <li class="navigation__item"><a href="#">Корпоративным клиентам</a></li>
+              <li class="navigation__item"><a href="#">Продавцам техники</a></li>
+              <li class="navigation__item"><a href="#">Партнерам</a></li>
+              <li class="navigation__item"><a href="#">Производителям</a></li>
+              <li class="navigation__item"><a href="#">Наши сервисные центры</a></li>
+              <li class="navigation__item"><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="info">
+            <ul class="buttons-list">
+              <li class="info__button">
+                <button class="button">
+                  <img src="./img/header/modal-window/phone.svg" alt="Звонок">
+                </button>
+              </li>
+              <li class="info__button">
+                <button class="button">
+                  <img src="./img/header/modal-window/message.svg" alt="Сообщение">
+                </button>
+              </li>
+              <li class="info__button">
+                <button class="button">
+                  <img src="./img/header/modal-window/account.svg" alt="Аккаунт">
+                </button>
+              </li>
+            </ul>
+            <a class="info__link info___mail" href="mailto:mail@cps.com">mail@cps.com</a>
+            <a class="info__link info___phone" href="tel:88008908900">8 800 890 8900</a>
+            <ul class="languages-list">
+              <li class="languages-list__ru languages--active">
+                <a href="#">RU</a>
+              </li>
+              <li class="languages-list__en">
+                <a href="#">EN</a>
+              </li>
+              <li class="languages-list__ch">
+                <a href="#">CH</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
   <main class="main">
     <div class="container">
       <div class="main__inner-wrapper">

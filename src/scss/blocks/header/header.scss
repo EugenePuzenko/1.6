@@ -1,9 +1,19 @@
+.header {
+    @media (min-width: $screen-laptop) {
+        display: none;
+    }
+}
+
 .container {
     width: 100%;
 
     &__inner-wrapper {
-    padding: 16px 19px 18px 16px;
+    padding: 18px 16px 18px 16px;
     border-bottom: 1px solid $color-aqua--light;
+
+    @media (min-width: $screen-sm) {
+        padding: 18px 24px 18px 24px;
+    }
 }
 }
 
@@ -17,6 +27,39 @@
     &__left-item {
         width: 53vw;
 
+        @media (min-width: $screen-xs) {
+            width: 50vw;
+        }
+
+        @media (min-width: $screen-md) {
+            width: 25vw;
+        }
+
+        &::after {
+            content: '';
+            position: relative;
+            width: 2px;
+            height: 32px;
+            background-color: $color-grey--light;
+
+            @media (min-width: $screen-md) {
+                position: absolute;
+                left: 12vw;
+            }
+        }
+    }
+
+    &__right-item {
+        width: 30vw;
+
+        @media (min-width: $screen-md) {
+            width: 38vw;
+        }
+    }
+
+    & .button--mobile-hidden {
+        display: none;
+
         &::after {
             content: '';
             position: relative;
@@ -24,16 +67,16 @@
             height: 32px;
             background-color: $color-grey--light;
         }
-    }
-
-    &__right-item {
-        width: 30vw;
-    }
-
-    & .button--mobile-hidden {
-        display: none;
+        
+        @media (min-width: $screen-md) {
+            display: flex;
+            justify-content: space-between;
+            width: 23vw;
+            align-items: center;
+        }
     }
 }
+
 
 .button {
     width: 40px;
@@ -44,4 +87,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:hover {
+        filter: saturate(2);
+        transform: scale(1.15);
+        transition-duration: 0.3s;
+    }
 }
