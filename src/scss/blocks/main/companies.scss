@@ -1,0 +1,55 @@
+.companies {
+
+    &__wrapper {
+        margin: 16px 0px 0px 16px;
+    }
+
+    &__title {
+        font-size: $font-size--normal;
+        line-height: $line-height--large;
+        color: $text-color-grey;
+        font-weight: $font-weight--light;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        margin-top: 32px;
+    }
+
+    &-button-show-more {
+        display: none;
+        border: none;
+        background-color: $color-white;
+    }
+
+    &-swiper-slide {
+        display: flex;
+        align-items: center;
+        padding: 16px;
+        min-width: 240px;
+        justify-content: space-between;
+        margin-right: 16px;
+        border: none;
+        background-color: $color-white;
+        border: 1px solid $color-grey--light;
+        border-radius: 6px;
+
+
+        & .arrow {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #FF3E79;
+            border-radius: 50%;
+    
+            &::after {
+                content: url('./../img/companies/arrow.svg');
+                transform: translateY(50%);
+                display: block;
+            }
+        }
+    }
+
+    
+
+}

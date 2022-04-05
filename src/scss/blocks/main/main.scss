@@ -11,7 +11,14 @@ a {
 }
 
 .main {
-    border-bottom: 1px solid $color-aqua--light;
+
+    & .container {
+        border-bottom: 1px solid $color-aqua--light;
+    }
+
+    @media (min-width: $screen-laptop) {
+        margin-left: 22vw;
+    }
 
     &__inner-wrapper {
         margin: 24px 16px 24px 16px;
@@ -20,7 +27,7 @@ a {
         }
 
         @media (min-width: $screen-laptop) {
-            margin: 42px 30px 0px 32px;
+            margin: 42px 30px 51px 32px;
         }
     }
 
@@ -54,6 +61,14 @@ a {
         font-size: $font-size--large;
         letter-spacing: -0.6px;
         color: $text-color;
+
+        &-row {
+            @media (min-width: $screen-laptop) {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
     
         &::before {
             content: '';
@@ -75,6 +90,55 @@ a {
     
         &-buttons {
             display: none;
+
+            @media (min-width: $screen-laptop) {
+                display: flex;
+                width: 22vw;
+                justify-content: space-between;
+            }
+
+            & .button {
+                display: block;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: right;
+                letter-spacing: -0.2px;
+                color: #1B1C21;
+                font-weight: 500;
+            }
+
+            & .button-first {
+
+                & img {
+                    transform: translate(-50%, -70%);
+                }
+                
+                &::before {
+                    content: 'Оставить заявку';
+                    display: block;
+                    width: 160px;
+                    position: relative;
+                    right: 170px;
+                    top: 7px;
+                }
+            }
+
+            & .button-second {
+
+                & img:last-child {
+                    transform: translate(-75%, -70%);
+                }
+
+                &::before {
+                    content: 'Статус ремонта';
+                    display: block;
+                    width: 160px;
+                    position: relative;
+                    right: 170px;
+                    top: 8px;
+                }
+                
+            }
         }
     }
 
@@ -95,6 +159,10 @@ a {
             justify-content: space-between;
             width: 100%;
             margin-top: 32px;
+        }
+
+        @media (min-width: $screen-laptop) {
+            margin-top: 20px;
         }
     }
 

@@ -1,6 +1,10 @@
 .modal-window {
     display: none;
 
+    @media (min-width: $screen-laptop) {
+        display: block;
+    }
+
     & .overlay {
         position: absolute;
         z-index: 2;
@@ -9,6 +13,10 @@
         width: 100vw;
         height: 100vh;
         backdrop-filter: blur(3px);
+
+        @media (min-width: $screen-laptop) {
+            display: none;
+        }
     }
 
     & .aside {
@@ -27,6 +35,13 @@
             width: 320px;
         }
 
+        @media (min-width: $screen-laptop) {
+            transform: translateX(0px);
+            box-shadow: none;
+            width: 22vw;
+            position: absolute;
+        }
+
         &--open {
             transform: translateX(0px);
         }
@@ -36,6 +51,10 @@
 
             @media (min-width: $screen-xs) {
                 margin: 19px 24px 0px 24px;
+            }
+
+            @media (min-width: $screen-laptop) {
+                margin: 30px 24px 0px 24px;
             }
         }
     
@@ -49,10 +68,17 @@
 
         &-head__close {
             min-width: 154px;
+
+            & .button {
+                @media (min-width: $screen-laptop) {
+                    display: none;
+                }
+            }
         }
 
         &-body {
             height: 85vh;
+            max-height: $screen-md;
 
             @media (min-height: $screen-md) {
                 height: 90vh;
@@ -137,7 +163,7 @@
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        width: 30%;
+        width: 40%;
     }
 
     & .languages-list__ru a {
