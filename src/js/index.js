@@ -181,16 +181,6 @@ repairBtnShowMore.addEventListener ('click', function (){
 
 
 
-
-
-
-
-
-
-
-//  модал телефон
-
-
 const btnPhone = document.querySelector('.button-phone');
 const btnPhoneBurger = document.querySelector('.button-phone-burger');
 const btnPhoneClose = document.querySelector('.call__btn-close');
