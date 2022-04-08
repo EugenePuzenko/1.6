@@ -1,0 +1,238 @@
+.main {
+    .prices {
+        border-bottom: 1px solid $color-aqua--light;
+
+        &__wrapper {
+    
+            margin: 16px 0px 40px 16px;
+
+            @media (min-width: $screen-md) {
+                margin: 16px 24px 40px 24px;
+            }
+        }
+
+        &__swiper {
+            margin-top: 32px;
+        }
+
+        &__swiper-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 260px;
+            height: 200px;
+            padding: 16px;
+            border-radius: 6px;
+            border: 1px solid $color-grey--light;
+
+            @media (min-width: $screen-md) {
+                flex-direction: row;
+                width: auto;
+                height: 64px;
+                align-items: center;
+                border-radius: 0px;
+                border: none;
+                border-bottom: 1px solid $color-grey--light;
+            }
+
+            &:last-child {
+                @media (min-width: $screen-md) {
+                    border-bottom: none;
+                }
+            }
+        }
+
+        & .card {
+
+            &__title {
+                font-size: $font-size--small;
+                line-height: 16px;
+                color: $text-color-grey;
+
+                @media (min-width: $screen-md) {
+                    display: none;
+                }
+            }
+
+            & .table-header {
+
+                @media (min-width: $screen-md) {
+                    display: block;
+                    position: absolute;
+                    bottom: 80px;
+                }
+
+                &__time {
+
+                    @media (min-width: $screen-md) {
+                        left: 70%;
+                    }
+
+                    @media (min-width: $screen-lg) {
+                        left: 72%;
+                    }
+                }
+
+                &__price {
+                    display: none;
+                    @media (min-width: $screen-md) {
+                        display: block;
+                    }
+                }
+            }
+
+            &__descr {
+                margin-top: 4px;
+                font-size: $font-size--small;
+                line-height: 18px;
+                letter-spacing: 0.2px;
+                color: $text-color;
+                font-weight: $font-weight--medium;
+
+                &--laptop-hidden {
+
+                    @media (min-width: $screen-md) {
+                        display: none;
+                    }
+                }
+            }
+
+            & .time {
+                display: flex;
+                justify-content: space-between;
+
+                @media (min-width: $screen-md) {
+                    width: 45%;
+                    align-items: center;
+                }
+            }
+
+            & .service,
+              .price,
+              .time-column {
+                display: flex;
+                flex-direction: column;
+            }
+
+            & .price {
+
+                @media (min-width: $screen-md) {
+                    display: none;
+                }
+            }
+
+            & .time-column {
+
+                @media (min-width: $screen-md) {
+                    flex-direction: row;
+                    width: 57%;
+                    justify-content: space-between;
+                }
+
+                &-first {
+                    @media (min-width: $screen-md) {
+                        width: 50%;
+                    }
+                }
+            }
+
+
+            &__descr--mobile-hidden {
+                display: none;
+
+                @media (min-width: $screen-md) {
+                    display: block;
+                }
+            }
+
+            &__wrapper {
+
+                @media (min-width: $screen-md) {
+                    margin-top: 80px;
+                }
+            }
+        }
+
+        & .swiper-pagination {
+            margin-top: 16px;
+        }
+
+        & .swiper-wrapper {
+
+            @media (min-width: $screen-md) {
+                display: flex;
+                flex-direction: column;
+                margin-top: 50px;
+            }
+        }
+
+        & .description {
+
+            &__text {
+                
+                margin-top: 16px;
+                font-size: $font-size--small;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+                color: $text-color;
+                width: 85%;
+
+                @media (min-width: $screen-md) {
+                    width: 60%;
+                }
+
+                @media (min-width: $screen-laptop) {
+                    width: 50%;
+                }
+            }
+
+            &__btn-offer {
+                display: block;
+                margin-top: 16px;
+                border: none;
+                background-color: $color-white;
+                width: 70%;
+            }
+
+            & .btn-offer__text {
+                font-size: $font-size--normal;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+                color: $text-color;
+                font-weight: $font-weight--medium;
+                display: block;
+                text-align: left;
+
+                &::after {
+                    content: url('../img/main/pink-arrow.svg');
+                    position: relative;
+                    left: 8px;
+                    top: 2px;
+                }
+            }
+        }
+    }
+}
+
+
+.btn-order {
+    align-self: flex-end;
+    width: 120px;
+    height: 32px;
+    border: none;
+    background-color: $color-pink;
+    border-radius: 25px;
+    color: $color-white;
+    font-size: $font-size--xs;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    font-weight: $font-weight--bold;
+
+    &::after {
+        content: url('../img/main/icon-right.svg');
+        display: inline-block;
+        margin-left: 17px;
+        transform: translateY(2px);
+    }
+}

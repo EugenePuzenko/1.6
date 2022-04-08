@@ -1,0 +1,13 @@
+.swiper-pagination {
+    position: static;
+
+    &-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: $dot;
+    
+        &-active {
+            background-color: $dot--active;
+        }
+    }
+}

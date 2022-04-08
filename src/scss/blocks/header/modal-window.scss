@@ -1,11 +1,14 @@
 .modal-window {
-    display: none;
+    position: fixed;
+    z-index: 3;
+    top: 0px;
 
     @media (min-width: $screen-laptop) {
         display: block;
     }
 
     & .overlay {
+        display: none;
         position: absolute;
         z-index: 2;
         top: 0px;
@@ -38,7 +41,7 @@
         @media (min-width: $screen-laptop) {
             transform: translateX(0px);
             box-shadow: none;
-            width: 22vw;
+            width: 308px;
             position: absolute;
         }
 
@@ -108,15 +111,15 @@
 
         & .navigation__item a {
             display: block;
-            font-size: 16px;
+            font-size: $font-size--normal;
             line-height: 24px;
             letter-spacing: -0.2px;
-            color: #1B1C21;
-            font-weight: 500;
+            color: $text-color;
+            font-weight: $font-weight--medium;
         }
 
         & .navigation__item--active a {
-            color: #7E7E82;
+            color: $text-color-grey;
         }
 
         & .navigation__item--active::before {
@@ -143,20 +146,20 @@
 
     & .info___mail {
         margin-top: 16px;
-        font-size: 16px;
+        font-size: $font-size--normal;
         line-height: 24px;
         letter-spacing: -0.2px;
-        font-weight: 500;
-        color: #1B1C21;
+        font-weight: $font-weight--medium;
+        color: $text-color;
     }
 
     & .info___phone {
         margin-top: 12px;
-        font-size: 24px;
+        font-size: $font-size--big;
         line-height: 32px;
         letter-spacing: -0.6px;
         font-weight: bold;
-        color: #1B1C21;
+        color: $text-color;
     }
 
     & .languages-list {
@@ -177,7 +180,7 @@
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
-        color: #1B1C21;
+        color: $text-color;
 
         @media (min-height: $screen-sm) {
             margin-top: 40px;
@@ -185,7 +188,7 @@
     }
 
     & .languages--active a {
-        color: #7E7E82;
+        color: $text-color-grey;
     }
 }
 

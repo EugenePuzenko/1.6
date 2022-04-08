@@ -1,36 +1,35 @@
 // Цвета
-$color-grey--light:             #EAEAEA;
-$color-pink:                    #FF3E79;
-$color-aqua--light:             #D9FFF5;
-$color-aqua:                    #B8FFEC;
-$color-white:                   #FFFFFF;
-$color-aqua--bold:              #41F6D7;
-
-// Текст
-$font-family:      'TT Lakes', sans-serif;
-
-$font-weight--light:                  400;
-$font-weight--medium:                 500;
-$font-weight--bold:                   600;
-$line-height-normal:                  18px;
-$line-height--large:                  24px;
-
-$text-color:                    #1B1C21;
-$text-color-grey:               #7E7E82;
+$color-grey--light:                #EAEAEA;
+$color-pink:                       #FF3E79;
+$color-aqua--light:                #D9FFF5;
+$color-aqua:                       #B8FFEC;
+$color-white:                      #FFFFFF;
+$color-aqua--bold:                 #41F6D7;
 
 
- 
-// $font-size:                   1.6rem;
-// $font-size--h1:               3rem;
-$font-size--small:                  14px;
-$font-size--normal:                 16px;
-$font-size--large:                  28px;
- 
-// $line-height:                 1.375em;
- 
+$dot:                              #6f6f72;
+$dot--active:                      #B5B6BC;
+$input-text:                       #B5B6BC;
+
+
+$font-family:         'TT Lakes', sans-serif;
+$font-weight--light:                     400;
+$font-weight--medium:                    500;
+$font-weight--bold:                      600;
+$line-height-normal:                    18px;
+$line-height--large:                    24px;
+$text-color:                       #1B1C21;
+$text-color-grey:                  #7E7E82;
 
  
-$screen-xxs:                            320px;
+$font-size--xs:                         12px;
+$font-size--small:                      14px;
+$font-size--normal:                     16px;
+$font-size--big:                        24px;
+$font-size--large:                      28px;
+ 
+
+$screen-xxs:                           320px;
 $screen-xs:                            480px;
 $screen-sm:                            600px;
 $screen-md:                            768px;
@@ -38,4 +37,3 @@ $screen-lg:                            992px;
 $screen-xl:                           1144px;
 $screen-laptop:                       1120px;
 $screen-xxl:                          1200px;
-

@@ -1,15 +1,20 @@
-// Только импорты
-
-@import '~normalize.css';
-@import '../../node_modules/swiper/swiper-bundle.css';
 
 @import './fonts.scss';
 @import './variables.scss';
 
-// header
+
 @import './blocks/header/header.scss';
 @import './blocks/header/modal-window.scss';
 
-// main
+
+@import './blocks/page.scss';
 @import './blocks/main/main.scss';
 @import './blocks/main/companies.scss';
+@import './blocks/main/swiper.scss';
+@import './blocks/main/repair.scss';
+@import './blocks/main/prices.scss';
+@import './blocks/footer/footer.scss';
+
+
+@import './blocks/modals/modal-call.scss';
+@import './blocks/modals/modal-feedback.scss';
