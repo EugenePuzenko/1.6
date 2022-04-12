@@ -1,0 +1,36 @@
+.table-header {
+
+    @media (min-width: $screen-md) {
+
+        display: block;
+        position: absolute;
+        bottom: 80px;
+
+    }
+
+    &__time {
+
+        @media (min-width: $screen-md) {
+
+            left: 71%;
+
+        }
+
+        @media (min-width: $screen-lg) {
+
+            left: 72%;
+
+        }
+    }
+
+    &__price {
+
+        display: none;
+
+        @media (min-width: $screen-md) {
+
+            display: block;
+            
+        }
+    }
+}

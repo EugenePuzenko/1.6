@@ -1,0 +1,15 @@
+.aside-body {
+
+    height: 85vh;
+    max-height: $screen-md;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-height: $screen-md) {
+
+        height: 90vh;
+
+    }
+
+}

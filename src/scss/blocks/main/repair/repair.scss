@@ -1,0 +1,166 @@
+.repair {
+
+    border-bottom: 1px solid $color-aqua--light;
+
+    &__wrapper {
+
+        margin: 16px 0px 24px 16px;
+
+        @media (min-width: $screen-md) {
+
+            margin: 16px 24px 32px 24px;
+
+        }
+    }
+
+    &__swiper {
+
+        margin-top: 32px;
+
+        @media (min-width: $screen-md) {
+
+            margin-top: 40px;
+
+        }
+    }
+
+    &__swiper-slide {
+
+        display: block;
+        width: 240px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        border: none;
+        border: 1px solid $color-grey--light;
+        background-color: $color-white;
+
+        @media (min-width: $screen-md) {
+
+            width: auto;
+
+        }
+
+        &-text {
+
+            font-size: $font-size--normal;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: $text-color;
+            font-weight: $font-weight--medium;
+
+        }
+
+    }
+
+    &-swiper-wrapper {
+
+        @media (min-width: $screen-md) {
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+            justify-content: space-between;
+            grid-column-gap: 24px;
+            row-gap: 24px;
+
+        }
+        
+    }
+
+    & .swiper-pagination {
+
+        display: block;
+        margin-top: 20px;
+
+        @media (min-width: $screen-md) {
+
+            display: none;
+
+        }
+    }
+
+    &__button-show-more {
+
+        display: none;
+        
+        @media (min-width: $screen-md) {
+
+            display: block;
+
+        }
+    }  
+
+    & .swiper-slide--hidden {
+
+        @media (min-width: $screen-md) {
+
+            display: none;
+
+        }
+    }
+
+    & .swiper-slide--laptop-hidden {
+
+        @media (min-width: ($screen-lg + 24px)) {
+
+            display: none;
+
+        }
+
+        @media (min-width: $screen-laptop) {
+
+            display: flex;
+
+        }
+
+        @media (min-width: ($screen-xxl + 103px)) {
+
+            display: none;
+
+        }
+    }
+
+    & .swiper-slide--laptop-visible {
+
+        @media (min-width: ($screen-lg + 24px)) {
+
+            display: flex;
+
+        }
+
+        @media (min-width: ($screen-laptop)) {
+
+            display: none;
+
+        }
+
+        @media (min-width: ($screen-xxl + 103px)) {
+
+            display: flex;
+
+        }
+    }
+
+    & .swiper-slide--visibility-hidden {
+
+        @media (min-width: ($screen-lg + 24px)) {
+
+            display: flex;
+            visibility: hidden;
+
+        }
+
+        @media (min-width: $screen-laptop) {
+
+            display: none;
+
+        }
+
+        @media (min-width: ($screen-xxl + 103px)) {
+
+            display: flex;
+            
+        }
+    }
+}

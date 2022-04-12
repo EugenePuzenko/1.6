@@ -1,13 +1,21 @@
-.swiper-pagination {
-    position: static;
+.swiper {
 
-    &-bullet {
-        width: 12px;
-        height: 12px;
-        background-color: $dot;
-    
-        &-active {
-            background-color: $dot--active;
-        }
+    width: 100%;
+
+    &-slide {
+
+        width: auto;
+
     }
+
+    &-wrapper {
+
+        @media (min-width: $screen-laptop) {
+
+            flex-wrap: wrap;
+
+        }
+
+    }
+    
 }

@@ -1,20 +1,67 @@
-
 @import './fonts.scss';
 @import './variables.scss';
+@import './page.scss';
 
-
+//header
 @import './blocks/header/header.scss';
-@import './blocks/header/modal-window.scss';
+@import './blocks/header/container.scss';
+@import './blocks/header/row.scss';
+@import './blocks/header/button--mobile-hidden.scss';
+@import './blocks/header/button.scss';
 
+//burger-menu
+@import './blocks/modals/burger-nav/burger-menu.scss';
+@import './blocks/modals/burger-nav/aside.scss';
+@import './blocks/modals/burger-nav/overlay.scss';
+@import './blocks/modals/burger-nav/navigation.scss';
+@import './blocks/modals/burger-nav/info.scss';
+@import './blocks/modals/burger-nav/languages.scss';
+@import './blocks/modals/burger-nav/aside-body.scss';
+@import './blocks/modals/burger-nav/aside-head.scss';
 
-@import './blocks/page.scss';
+//main
 @import './blocks/main/main.scss';
-@import './blocks/main/companies.scss';
+@import './blocks/main/swiper-pagination.scss';
+@import './blocks/main/button-show-more.scss';
 @import './blocks/main/swiper.scss';
-@import './blocks/main/repair.scss';
-@import './blocks/main/prices.scss';
+@import './blocks/main/button-first.scss';
+@import './blocks/main/button-second.scss';
+@import './blocks/main/swiper.scss';
+@import './blocks/main/title-buttons.scss';
+@import './blocks/main/title-row.scss';
+@import './blocks/main/title.scss';
+
+//call
+@import './blocks/modals/call/modal.scss';
+@import './blocks/modals/call/agrement.scss';
+@import './blocks/modals/call/text-decoration.scss';
+
+//feedback
+@import './blocks/modals/feedback/feedback.scss';
+
+//companies
+@import './blocks/main/companies/companies.scss';
+@import './blocks/main/companies/main-title.scss';
+@import './blocks/main/companies/companies-button-show-more.scss';
+@import './blocks/main/companies/arrow.scss';
+
+//repair
+@import './blocks/main/repair/repair.scss';
+@import './blocks/main/repair/more.scss';
+
+//prices
+@import './blocks/main/prices/prices.scss';
+@import './blocks/main/prices/card.scss';
+@import './blocks/main/prices/btn-order.scss';
+@import './blocks/main/prices/btn-offer-link.scss';
+@import './blocks/main/prices/description.scss';
+@import './blocks/main/prices/table-header.scss';
+@import './blocks/main/prices/service.scss';
+@import './blocks/main/prices/price.scss';
+@import './blocks/main/prices/time.scss';
+@import './blocks/main/prices/time-column.scss';
+
+//footer
 @import './blocks/footer/footer.scss';
-
-
-@import './blocks/modals/modal-call.scss';
-@import './blocks/modals/modal-feedback.scss';
+@import './blocks/footer/footer-info.scss';
+@import './blocks/footer/copyright.scss';

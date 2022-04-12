@@ -1,0 +1,58 @@
+.row {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__left-item {
+
+        width: 53vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        @media (min-width: $screen-xs) {
+    
+            width: 50vw;
+    
+        }
+    
+        @media (min-width: $screen-md) {
+    
+            width: 25vw;
+    
+        }
+    
+        &::after {
+    
+            content: '';
+            position: relative;
+            width: 2px;
+            height: 32px;
+            background-color: $color-grey--light;
+    
+            @media (min-width: $screen-md) {
+    
+                position: absolute;
+                left: 12vw;
+    
+            }
+    
+        }
+    
+    }
+
+    &__right-item {
+
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        @media (min-width: $screen-md) {
+    
+            width: 38vw;
+    
+        }
+    }
+}

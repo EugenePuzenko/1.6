@@ -1,0 +1,17 @@
+.overlay {
+
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+
+    @media (min-width: $screen-laptop) {
+
+        display: none;
+
+    }
+}

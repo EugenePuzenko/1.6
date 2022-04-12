@@ -1,0 +1,59 @@
+.navigation {
+
+    height: 60%;
+    margin-top: 26px;
+
+    @media (min-height: $screen-sm) {
+
+        margin-top: 50px;
+        height: 50%;
+
+    }
+
+    &__list {
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    &__item a {
+
+        display: block;
+        font-size: $font-size--normal;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: $text-color;
+        font-weight: $font-weight--medium;
+    }
+
+    &__item--active a,
+    &__item:hover a {
+
+        color: $text-color-grey;
+    
+    }
+
+    &__item--active,
+    &__item:hover {
+
+        &::before {
+
+            content: "";
+            position: absolute;
+            width: 4px;
+            height: 32px;
+            background-color: $color-aqua--bold;
+            border-radius: 0px 5px 5px 0px;
+            transform: translate(-16px, -5px);
+
+            @media (min-width: $screen-xs) {
+
+                transform: translate(-24px, -5px);
+
+            }
+        }
+    }
+}

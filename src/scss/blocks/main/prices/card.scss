@@ -1,0 +1,55 @@
+.card {
+
+    &__title {
+
+        font-size: $font-size--small;
+        line-height: 16px;
+        color: $text-color-grey;
+
+        @media (min-width: $screen-md) {
+
+            display: none;
+
+        }
+    }
+
+    &__descr {
+
+        margin-top: 4px;
+        font-size: $font-size--small;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: $text-color;
+        font-weight: $font-weight--medium;
+
+        &--laptop-hidden {
+
+            @media (min-width: $screen-md) {
+
+                display: none;
+
+            }
+        }
+    }
+
+
+    &__descr--mobile-hidden {
+
+        display: none;
+
+        @media (min-width: $screen-md) {
+
+            display: block;
+
+        }
+    }
+
+    &__wrapper {
+
+        @media (min-width: $screen-md) {
+
+            margin-top: 80px;
+            
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.time-column {
+    
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screen-md) {
+
+        flex-direction: row;
+        width: 57%;
+        justify-content: space-between;
+
+    }
+
+    &-first {
+
+        @media (min-width: $screen-md) {
+
+            width: 50%;
+            
+        }
+    }
+}

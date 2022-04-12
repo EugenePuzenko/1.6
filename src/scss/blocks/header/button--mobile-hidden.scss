@@ -1,0 +1,24 @@
+.button--mobile-hidden {
+
+    display: none;
+
+    &::after {
+
+        content: '';
+        position: relative;
+        width: 2px;
+        height: 32px;
+        background-color: $color-grey--light;
+
+    }
+    
+    @media (min-width: $screen-md) {
+
+        display: flex;
+        justify-content: space-between;
+        width: 23vw;
+        align-items: center;
+
+    }
+
+}

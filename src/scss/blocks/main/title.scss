@@ -1,0 +1,27 @@
+.title {
+
+    font-size: $font-size--large;
+    letter-spacing: -0.6px;
+    color: $text-color;
+
+    &::before {
+
+        content: '';
+        position: absolute;
+        height: 40px;
+        width: 4px;
+        background: $color-aqua--bold;
+        transform: translate(-16px, 0px);
+        border-radius: 0px 5px 5px 0px;
+
+        @media (min-width: $screen-sm) {
+            transform: translate(-24px, 0px);
+        }
+
+        @media (min-width: $screen-laptop) {
+            transform: translate(-32px, 0px);
+        }
+
+    }
+    
+}

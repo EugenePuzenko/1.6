@@ -43,7 +43,7 @@
       </div>
     </div>
   </header>
-  <div class="modal-window">
+  <div class="burger-menu">
     <div class="overlay"></div>
     <aside class="aside">
       <div class="aside__wrapper">
@@ -74,7 +74,7 @@
             </ul>
           </div>
           <div class="info">
-            <ul class="buttons-list">
+            <ul class="info__buttons-list">
               <li class="info__button">
                 <button class="button button-phone-burger">
                   <img src="./img/header/modal-window/phone.svg" alt="Звонок">
@@ -110,48 +110,44 @@
     </aside>
   </div>
 
-  <div class="modal-call">
-    <aside class="aside call">
-      <div class="call__wrapper modal__wrapper">
-        <button class="button call__btn-close">
-          <img src="./img/header/modal-window/close.svg" alt="Закрыть">
-        </button>
-        <h2 class="title call__title">Заказать звонок</h2>
+  <aside class="modal">
+    <div class="modal__wrapper">
+      <button class="button modal__btn-close">
+        <img src="./img/header/modal-window/close.svg" alt="Закрыть">
+      </button>
+      <h2 class="title modal__title">Заказать звонок</h2>
 
-        <form action="url">
-          <input type="tel" placeholder="Телефон" autofocus required class="call__input">
-          <p class="call__agrement">Нажимая “отправить”, вы даете согласие на <span
-              class="text-decoration--pink"><a>обработку персональных данных</a></span>
-            и соглашаетесь
-            с нашей <span class="text-decoration--pink"><a>политикой конфиденциальности</a></span></p>
-          <button class="btn-order call__btn">отправить</button>
-        </form>
-      </div>
-    </aside>
-  </div>
+      <form action="url">
+        <input type="tel" placeholder="Телефон" autofocus required class="modal__input">
+        <p class="agrement">Нажимая “отправить”, вы даете согласие на <span class="text-decoration--pink"><a>обработку
+              персональных данных</a></span>
+          и соглашаетесь
+          с нашей <span class="text-decoration--pink"><a>политикой конфиденциальности</a></span></p>
+        <button class="btn-order modal__btn">отправить</button>
+      </form>
+    </div>
+  </aside>
 
-  <div class="modal-feedback">
-    <aside class="aside feedback">
-      <div class="feedback__wrapper modal__wrapper">
-        <button class="button feedback__btn-close">
-          <img src="./img/header/modal-window/close.svg" alt="Закрыть">
-        </button>
-        <h2 class="title call__title">Обратная связь</h2>
+  <aside class="modal feedback">
+    <div class="modal__wrapper">
+      <button class="button modal__btn-close feedback__btn-close">
+        <img src="./img/header/modal-window/close.svg" alt="Закрыть">
+      </button>
+      <h2 class="title modal__title">Обратная связь</h2>
 
-        <form action="url" class="form__wrapper">
-          <input type="text" placeholder="Имя" autofocus required class="feedback__input">
-          <input type="tel" placeholder="Телефон" required class="feedback__input">
-          <input type="email" placeholder="Электронная почта" required class="feedback__input">
-          <textarea name="message" rows="4" class="feedback__input feedback__input-message">Сообщение</textarea>
-          <p class="call__agrement">Нажимая “отправить”, вы даете согласие на <span
-              class="text-decoration--pink"><a>обработку персональных данных</a></span>
-            и соглашаетесь
-            с нашей <span class="text-decoration--pink"><a>политикой конфиденциальности</a></span></p>
-          <button class="btn-order call__btn">отправить</button>
-        </form>
-      </div>
-    </aside>
-  </div>
+      <form action="url" class="form__wrapper">
+        <input type="text" placeholder="Имя" autofocus required class="modal__input">
+        <input type="tel" placeholder="Телефон" required class="modal__input">
+        <input type="email" placeholder="Электронная почта" required class="modal__input">
+        <textarea name="message" rows="4" class="modal__input feedback__input-message">Сообщение</textarea>
+        <p class="agrement">Нажимая “отправить”, вы даете согласие на <span class="text-decoration--pink"><a>обработку
+              персональных данных</a></span>
+          и соглашаетесь
+          с нашей <span class="text-decoration--pink"><a>политикой конфиденциальности</a></span></p>
+        <button class="btn-order modal__btn">отправить</button>
+      </form>
+    </div>
+  </aside>
 
   <main class="main">
     <div class="container">
@@ -198,7 +194,7 @@
               репутацию надежного партнера, что подтверждает большое количество постоянных
               клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
               советуют нас родным и близким.</span>
-            <button class="button__show-more">Читать
+            <button class="button-show-more">Читать
               далее</button>
           </p>
           <img src="./img/main/bg.jpg" alt="" class="main-row__img">
@@ -305,7 +301,7 @@
 
         </span>
 
-        <button class="button__show-more companies-button-show-more companies-button-show-more--active">Показать
+        <button class="button-show-more companies-button-show-more companies-button-show-more--active">Показать
           всё</button>
       </div>
     </section>
@@ -379,7 +375,7 @@
           <div class="swiper-pagination"></div>
         </div>
 
-        <button class="button__show-more repair-button-show-more repair-button-show-more--active">Показать
+        <button class="button-show-more repair__button-show-more repair-button-show-more--active">Показать
           всё</button>
       </div>
       </div>
@@ -498,8 +494,8 @@
             Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого
             предложения на постоянное обслуживание, оставьте заявку.
           </p>
-          <button class="btn-offer description__btn-offer">
-            <span class="btn-offer__text">Получить коммерческое предложение</span>
+          <button class="description__btn-offer">
+            <span class="btn-offer-link"><a href="#">Получить коммерческое предложение</a></span>
           </button>
         </div>
 
@@ -516,7 +512,7 @@
 
       <a class="privacy">Политика конфиденциальности</a>
 
-      <p class="info">Информация, размещенная на данной странице,
+      <p class="footer-info">Информация, размещенная на данной странице,
         не является публичной офертой
       </p>
     </div>

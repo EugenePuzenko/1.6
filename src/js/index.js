@@ -8,7 +8,7 @@ import '../scss/style.scss';
 
 
 
-const btnShowMore = document.querySelector('.button__show-more');
+const btnShowMore = document.querySelector('.button-show-more');
 const textMore = document.querySelector('.main-row-text--hidden');
 const textMoreHidden = document.querySelector('.main-row__sup-descr');
 
@@ -43,7 +43,7 @@ btnShowMore.addEventListener ('click', function (){
 
 const burgerButton = document.querySelector('.button');
 const modalWindow = document.querySelector('.modal-window');
-const asideBlock = modalWindow.querySelector('.aside');
+const asideBlock = document.querySelector('.aside');
 
 const closeButton = asideBlock.querySelector('.button');
 const overlay = document.querySelector('.overlay');
@@ -68,8 +68,8 @@ window.addEventListener ('click', function (e){
 
     overlay.style.display = 'none';
     asideBlock.classList.remove('aside--open');
-    modalMessage.classList.remove('feedback--open');
-    modalPhone.classList.remove('call--open');
+    modalMessage.classList.remove('modal--open');
+    modalPhone.classList.remove('modal--open');
     
   }
 });
@@ -159,7 +159,7 @@ companiesBtnShowMore.addEventListener ('click', function (){
 });
 
 
-const repairBtnShowMore = document.querySelector('.repair-button-show-more');
+const repairBtnShowMore = document.querySelector('.repair__button-show-more');
 const repairBlock = document.querySelector('.repair-more');
 
 repairBtnShowMore.addEventListener ('click', function (){
@@ -183,23 +183,23 @@ repairBtnShowMore.addEventListener ('click', function (){
 
 const btnPhone = document.querySelector('.button-phone');
 const btnPhoneBurger = document.querySelector('.button-phone-burger');
-const btnPhoneClose = document.querySelector('.call__btn-close');
+const btnPhoneClose = document.querySelector('.modal__btn-close');
 
-const modalPhone = document.querySelector('.call');
+const modalPhone = document.querySelector('.modal');
 
 
 
 btnPhone.addEventListener ('click', function () {
   
-  modalPhone.classList.add('call--open');
+  modalPhone.classList.add('modal--open');
 
 });
 
 btnPhoneBurger.addEventListener ('click', function () {
   
-  modalPhone.classList.add('call--open');
+  modalPhone.classList.add('modal--open');
 
-  btnPhoneClose.classList.add('call__btn-close--open');
+  btnPhoneClose.classList.add('modal__btn-close--open');
 
   if (window.innerWidth >= 1120) {
     btnPhoneClose.style.display = 'flex';
@@ -210,7 +210,7 @@ btnPhoneBurger.addEventListener ('click', function () {
 
 btnPhoneClose.addEventListener ('click', function (){
 
-  modalPhone.classList.remove('call--open');
+  modalPhone.classList.remove('modal--open');
 
   if (window.innerWidth >= 1120) {
     btnPhoneClose.style.display = 'none';
@@ -230,15 +230,15 @@ const modalMessage = document.querySelector('.feedback');
 
 btnMessage.addEventListener ('click', function () {
   
-  modalMessage.classList.add('feedback--open');
+  modalMessage.classList.add('modal--open');
 
 });
 
 btnMessageBurger.addEventListener ('click', function () {
   
-  modalMessage.classList.add('feedback--open');
+  modalMessage.classList.add('modal--open');
 
-  btnMessageClose.classList.add('feedback__btn-close--open');
+  btnMessageClose.classList.add('modal__btn-close--open');
 
   if (window.innerWidth >= 1120) {
     btnMessageClose.style.display = 'flex';
@@ -248,7 +248,7 @@ btnMessageBurger.addEventListener ('click', function () {
 
 btnMessageClose.addEventListener ('click', function (){
 
-  modalMessage.classList.remove('feedback--open');
+  modalMessage.classList.remove('modal--open');
 
   if (window.innerWidth >= 1120) {
     btnMessageClose.style.display = 'none';

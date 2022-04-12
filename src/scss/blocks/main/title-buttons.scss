@@ -1,0 +1,27 @@
+.title-buttons {
+
+    display: none;
+
+    @media (min-width: $screen-laptop) {
+
+        display: flex;
+        width: 230px;
+        justify-content: space-between;
+
+    }
+
+    & .button {
+
+        display: block;
+        font-size: $font-size--normal;
+        line-height: 24px;
+        text-align: right;
+        letter-spacing: -0.2px;
+        color: $text-color;
+        font-weight: $font-weight--medium;
+
+    }
+}
+
+
+

@@ -1,0 +1,11 @@
+.title-row {
+
+    @media (min-width: $screen-laptop) {
+
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+}

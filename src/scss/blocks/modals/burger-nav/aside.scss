@@ -1,0 +1,51 @@
+.aside {
+
+    transform: translateX(-400px);
+    transition-duration: 0.5s;
+    transition-property: transform;
+    z-index: 3;
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0px;
+    background: $color-white;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+
+    @media (min-width: 360px) {
+
+        width: 320px;
+
+    }
+
+    @media (min-width: $screen-laptop) {
+
+        transform: translateX(0px);
+        box-shadow: none;
+        width: 308px;
+        position: absolute;
+
+    }
+
+    &--open {
+
+        transform: translateX(0px);
+
+    }
+
+    &__wrapper {
+
+        margin: 19px 16px 0px 16px;
+
+        @media (min-width: $screen-xs) {
+
+            margin: 19px 24px 0px 24px;
+
+        }
+
+        @media (min-width: $screen-laptop) {
+
+            margin: 30px 24px 0px 24px;
+
+        }
+    }
+}

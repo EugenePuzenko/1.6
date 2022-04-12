@@ -1,0 +1,12 @@
+.time {
+
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: $screen-md) {
+
+        width: 45%;
+        align-items: center;
+        
+    }
+}

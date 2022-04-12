@@ -1,0 +1,24 @@
+.aside-head {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__close {
+
+        min-width: 154px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        & .button {
+    
+            @media (min-width: $screen-laptop) {
+    
+                display: none;
+    
+            }
+        }
+    }
+
+}
