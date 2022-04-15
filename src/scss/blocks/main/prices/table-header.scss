@@ -8,7 +8,7 @@
 
     }
 
-    &__time {
+    &-time {
 
         @media (min-width: $screen-md) {
 
@@ -23,7 +23,7 @@
         }
     }
 
-    &__price {
+    &-price {
 
         display: none;
 

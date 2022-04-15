@@ -21,6 +21,11 @@
 
     &__menu {
         margin-top: 24px;
+        display: flex;
+        overflow: hidden;
+        overflow-x: scroll;
+        white-space: nowrap;
+        flex-wrap: nowrap;
 
         @media (min-width: $screen-sm) {
             margin-top: 32px;
@@ -28,6 +33,7 @@
 
         @media (min-width: $screen-laptop) {
             margin-top: 8px;
+            flex-wrap: wrap;
         }
     }
 
@@ -37,12 +43,13 @@
         text-align: center;
 
         &:hover {
-            border: 2px solid $color-aqua;
+            box-shadow: 2px 2px 0 $color-aqua inset, -2px -2px 0 $color-aqua inset;
+            border-radius: 6px
         }
     }
 
     &__menu-item--active {
-        border: 2px solid $color-aqua;
+        box-shadow: 2px 2px 0 $color-aqua inset, -2px -2px 0 $color-aqua inset;
         border-radius: 6px;
     }
 
@@ -71,7 +78,7 @@
         }
     }
 
-    &-row-text--hidden {
+    &-row__full-descr--hidden {
         display: none;
     }  
 

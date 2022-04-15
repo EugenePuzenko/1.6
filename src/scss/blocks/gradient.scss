@@ -1,0 +1,71 @@
+.gradient-wrapper {
+
+    position: relative;
+
+}
+
+
+.gradient,
+.gradient-menu {
+
+    &::before,
+    &::after {
+        content: '';
+        width: 24px;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        z-index: 2;
+    }
+
+    &::before {
+        left: 0px;
+        background: linear-gradient(90deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+
+        @media (min-width: $screen-md) {
+            
+            background: none;
+            
+        }
+    }
+
+    &::after {
+        right: 0px;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+
+        @media (min-width: $screen-md) {
+            
+            background: none;
+            
+        }
+    }
+}
+
+
+.gradient-menu {
+    &::before {
+
+        left: 0px;
+        background: linear-gradient(90deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+
+
+        @media (min-width: $screen-laptop) {
+            
+            background: none;
+            
+        }
+    }
+
+    &::after {
+
+        right: 0px;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+
+        @media (min-width: $screen-laptop) {
+            
+            background: none;
+            
+        }
+    }
+}

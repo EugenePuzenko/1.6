@@ -6,16 +6,10 @@
 
     &__left-item {
 
-        width: 53vw;
+        width: 170px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-    
-        @media (min-width: $screen-xs) {
-    
-            width: 50vw;
-    
-        }
     
         @media (min-width: $screen-md) {
     
@@ -44,7 +38,7 @@
 
     &__right-item {
 
-        width: 30vw;
+        width: 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;

@@ -9,7 +9,7 @@ import '../scss/style.scss';
 
 
 const btnShowMore = document.querySelector('.button-show-more');
-const textMore = document.querySelector('.main-row-text--hidden');
+const textMore = document.querySelector('.main-row__full-descr--hidden');
 const textMoreHidden = document.querySelector('.main-row__sup-descr');
 
 btnShowMore.addEventListener ('click', function (){
@@ -42,7 +42,6 @@ btnShowMore.addEventListener ('click', function (){
 
 
 const burgerButton = document.querySelector('.button');
-const modalWindow = document.querySelector('.modal-window');
 const asideBlock = document.querySelector('.aside');
 
 const closeButton = asideBlock.querySelector('.button');
@@ -70,20 +69,22 @@ window.addEventListener ('click', function (e){
     asideBlock.classList.remove('aside--open');
     modalMessage.classList.remove('modal--open');
     modalPhone.classList.remove('modal--open');
-    
+
+    if (window.innerWidth >= 1120) {
+      btnMessageClose.style.display = 'none';
+      btnPhoneClose.style.display = 'none';
+    }
   }
 });
 
 
 
-let swiper1
 let swiper2
 let swiper3
 let swiper4
 
 document.addEventListener('DOMContentLoaded', () => {
   const mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
-  const laptop = window.matchMedia('(min-width: 0px) and (max-width: 1119px)');
 
   function swiperInit() {
 
@@ -114,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (mobile.matches) {
-      swiper1 = new Swiper('.companies-swiper', {
+      swiper2 = new Swiper('.companies-swiper', {
         loop: true,
         slidesPerView: 'auto',
       
@@ -122,13 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
         pagination: {
             el: '.swiper-pagination',
         },
-      });
-    }
-
-    if (laptop.matches) {
-      swiper2 = new Swiper('.main__swiper', {
-        loop: true,
-        slidesPerView: 'auto'
       });
     }
   }
@@ -193,6 +187,10 @@ btnPhone.addEventListener ('click', function () {
   
   modalPhone.classList.add('modal--open');
 
+  if (window.innerWidth >= 768) {
+    overlay.style.display = 'block';
+  }
+
 });
 
 btnPhoneBurger.addEventListener ('click', function () {
@@ -203,8 +201,8 @@ btnPhoneBurger.addEventListener ('click', function () {
 
   if (window.innerWidth >= 1120) {
     btnPhoneClose.style.display = 'flex';
+    overlay.style.display = 'block';
   }
-  
 
 });
 
@@ -214,6 +212,10 @@ btnPhoneClose.addEventListener ('click', function (){
 
   if (window.innerWidth >= 1120) {
     btnPhoneClose.style.display = 'none';
+  }
+
+  if (window.innerWidth >= 768) {
+    overlay.style.display = 'none';
   }
 
 });
@@ -232,6 +234,10 @@ btnMessage.addEventListener ('click', function () {
   
   modalMessage.classList.add('modal--open');
 
+  if (window.innerWidth >= 768) {
+    overlay.style.display = 'block';
+  }
+
 });
 
 btnMessageBurger.addEventListener ('click', function () {
@@ -240,8 +246,10 @@ btnMessageBurger.addEventListener ('click', function () {
 
   btnMessageClose.classList.add('modal__btn-close--open');
 
+
   if (window.innerWidth >= 1120) {
     btnMessageClose.style.display = 'flex';
+    overlay.style.display = 'block';
   }
 
 });
@@ -250,8 +258,16 @@ btnMessageClose.addEventListener ('click', function (){
 
   modalMessage.classList.remove('modal--open');
 
+
   if (window.innerWidth >= 1120) {
     btnMessageClose.style.display = 'none';
+    overlay.style.display = 'none';
+  }
+
+  
+
+  if (window.innerWidth >= 768) {
+    overlay.style.display = 'none';
   }
 
 });
