@@ -30,6 +30,8 @@
 @import './blocks/main/title-buttons.scss';
 @import './blocks/main/title-row.scss';
 @import './blocks/main/title.scss';
+@import './blocks/main/main-swiper-slide.scss';
+@import './blocks/main/slide--hidden.scss';
 
 //call
 @import './blocks/modals/call/modal.scss';
@@ -44,6 +46,8 @@
 @import './blocks/main/companies/main-title.scss';
 @import './blocks/main/companies/companies-button-show-more.scss';
 @import './blocks/main/companies/arrow.scss';
+@import './blocks/main/main-wrapper';
+@import './blocks/main/grid-container.scss';
 
 //repair
 @import './blocks/main/repair/repair.scss';
@@ -67,4 +71,3 @@
 @import './blocks/footer/copyright.scss';
 
 @import './blocks/gradient.scss';
-@import './blocks/main/main-wrapper';

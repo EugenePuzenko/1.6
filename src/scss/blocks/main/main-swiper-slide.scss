@@ -1,0 +1,52 @@
+.main-swiper-slide {
+
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    width: auto;
+    min-width: 224px;
+    justify-content: space-between;
+    border: none;
+    background-color: $color-white;
+    border: 1px solid $color-grey--light;
+    border-radius: 6px;
+
+    &-repair {
+        height: 160px;
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    &-text {
+
+        margin-right: auto;
+        font-size: $font-size--normal;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: $text-color;
+        font-weight: $font-weight--medium;
+    }
+
+    &-price-card {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 260px;
+        height: 200px;
+        align-items: flex-start;
+
+        @media (min-width: $screen-md) {
+
+            flex-direction: row;
+            width: auto;
+            height: auto;
+
+        }
+
+        @media (min-width: $screen-laptop) {
+
+            height: 64px;
+            align-items: center;
+
+        }
+    }
+}

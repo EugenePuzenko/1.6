@@ -1,20 +1,11 @@
-.more {
+.repair-more {
 
     display: none;
-    grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
-    justify-content: space-between;
-    grid-column-gap: 24px;
-    row-gap: 24px;
 
-    @media (min-width: $screen-md) {
+}
 
-        display: none;
-        
-    }
+.more-container {
 
-    &-container {
-
-        margin-top: 24px;
-
-    }
+    margin-top: 16px;
+    
 }

@@ -1,0 +1,73 @@
+.slide--hidden {
+
+    @media (min-width: $screen-md) {
+
+        display: none;
+    
+    }
+}
+
+.slide--tablet-visible {
+
+    @media (min-width: ($screen-lg + 24px)) {
+
+        display: flex;
+    
+    }
+
+    @media (min-width: $screen-laptop) {
+
+        display: none;
+    
+    }
+
+    @media (min-width: ($screen-xxl + 124px)) {
+
+        display: flex;
+    
+    }
+}
+
+.slide--tablet-hidden {
+
+    @media (min-width: ($screen-lg + 24px)) {
+
+        display: none;
+    
+    }
+
+    @media (min-width: $screen-laptop) {
+
+        display: flex;
+    
+    }
+
+    @media (min-width: ($screen-xxl + 124px)) {
+
+        display: none;
+    
+    }
+}
+
+.slide--tablet-visibility-hidden {
+
+    @media (min-width: ($screen-lg + 24px)) {
+
+        display: flex;
+        visibility: hidden;
+    
+    }
+
+    @media (min-width: $screen-laptop) {
+
+        display: none;
+    
+    }
+
+    @media (min-width: ($screen-xxl + 124px)) {
+
+        display: flex;
+        visibility: hidden;
+    
+    }
+}

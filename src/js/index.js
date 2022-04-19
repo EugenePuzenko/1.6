@@ -118,6 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
       swiper2 = new Swiper('.companies-swiper', {
         loop: true,
         slidesPerView: 'auto',
+        spaceBetween: 16,
       
         modules: [Pagination],
         pagination: {

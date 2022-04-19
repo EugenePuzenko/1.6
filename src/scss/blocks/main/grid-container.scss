@@ -1,0 +1,19 @@
+.grid-container {
+    
+    @media (min-width: ($screen-md)) {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+        justify-content: space-between;
+        column-gap: 24px;
+        row-gap: 16px;
+
+    }
+
+    @media (min-width: ($screen-xxl + 420px)) {
+
+        grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    
+    }
+}
+       
